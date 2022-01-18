@@ -4,13 +4,18 @@
 //   Source: https://www.youtube.com/watch?v=bMknfKXIFA8
 
 import React from 'react'
+import ReactLogo from './images/logo512.png'
 
 export default function Header() {
     return (
       <div>
         <header>
           <nav className="nav">
-            <img src="logo512.png" alt="react logo" className="nav-logo"/>
+            <img
+                src={ReactLogo}
+                alt="React Logo"
+                className="nav-logo"
+            />
             <ul className="nav-items">
               <li>Pricing</li>
               <li>About</li>
