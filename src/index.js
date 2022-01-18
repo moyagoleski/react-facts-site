@@ -5,24 +5,9 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './index.css'
-
 // "./" means you're talking about your own file
 // and not a package that's in your dependencies 
-// like react and react dom
-import Header from "./Header"
-import MainContent from "./MainContent"
-import Footer from "./Footer"
-
-function App() {
-  return (
-    <div>
-      <Header />
-      <MainContent />
-      <Footer />
-    </div>
-  )
-
-}
+import App from "./App.js"
+import './style.css'
 
 ReactDOM.render(<App />, document.getElementById("root"))
