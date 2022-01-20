@@ -15,6 +15,7 @@ body {
     background-color: #282D35;
 }
 
+/* nav section */
 nav {
     display: flex;
     align-items: center;
@@ -44,9 +45,14 @@ nav {
     margin-right: 7px;
 }
 
+/* main section */
 main {
     padding: 57px 27px;
     color: white;
+    background-image: url(./images/react-icon.svg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 75%;
 }
 
 .main--title {
@@ -64,4 +70,25 @@ main {
 .main--facts > li {
     /* new css - allows padding on top AND bottom */
     padding-block: 10px;
+}
+
+/* new css - marker element selects bullets on list items */
+.main--facts > li::marker {
+    font-size: 1.4rem;
+    color: #61DAFB;
+}
+
+/* footer section */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #21222A;
+    height: 50px;
+    padding: 15px 25px;
+}
+
+.footer--text {
+    color: #DEEBF8;
 }
